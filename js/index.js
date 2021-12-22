@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  var position = 2;
+
   var $clickMe = $('.click-icon'),
       $card = $('.card');
   
@@ -7,6 +9,18 @@ $(document).ready(function() {
 
 		$(this).toggleClass('is-opened');
     $clickMe.toggleClass('is-hidden');
+    
+      if (position == 1) {
+        $('body').css('background-image', 'url(background01.jpg)');
+        position = 2;
+        console.log(position);
+      }
+      else if (position == 2) {
+        $('body').css('background-image', 'url(background02.jpg)');
+        position = 1;
+        console.log(position);
+      }
+
 
 	});
 

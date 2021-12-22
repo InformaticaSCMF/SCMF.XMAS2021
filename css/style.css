@@ -228,12 +228,9 @@ body {
   }
 }
 
-.merry-christmas {
-  -webkit-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-}
+
 .merry-christmas svg {
-  width: 350px;
+  width: 300px;
   height: auto;
 }
 @media (max-width: 767px) {
